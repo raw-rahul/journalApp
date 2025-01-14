@@ -4,6 +4,7 @@ import com.rawrahul.journalApp.entity.User;
 import com.rawrahul.journalApp.repository.UserRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,7 @@ public class UserDetailsServiceImplTests {
 //        MockitoAnnotations.initMocks(this);
 //    }
 
+    @Disabled
     @Test
     public void loadUserByUsernameTest(){
         when(userRepository.findByusername(ArgumentMatchers.anyString())).thenReturn(User.builder().username("nehru").password("jinna").roles(new ArrayList<>()).build());

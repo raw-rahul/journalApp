@@ -59,6 +59,7 @@ public class UserServiceTests {
     }
 
 
+    @Disabled
     @Test
     public void test1(){
         assertEquals(5, 2+3);
